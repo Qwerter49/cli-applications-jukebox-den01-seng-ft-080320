@@ -2,6 +2,10 @@ def get_input
   gets.strip
 end
 
+def prompt_user
+  puts "Please enter a song name or number:"
+end
+
 def help 
   puts "I accept the following commands:"
   puts "- help : displays this help message"
@@ -14,4 +18,8 @@ def list(songs)
   songs.each_with_index do |song, index|
     puts "#{index + 1}. #{song}"
   end
+end
+
+def play(songs)
+  
 end
