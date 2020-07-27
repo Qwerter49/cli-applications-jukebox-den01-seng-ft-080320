@@ -9,3 +9,9 @@ def help
   /n "- play : lets you choose a song to play"
   /n "- exit : exits this program"
 end
+
+def list(songs)
+  songs.each_with_index do |song, index|
+    puts "#{index + 1}. #{song}"
+  end
+end
