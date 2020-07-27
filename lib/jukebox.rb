@@ -42,7 +42,7 @@ end
 def run(s0ngs)
   puts "Please enter a command:"
   input = gets.strip
-  until input == "exit" do 
+  while input != "exit" do 
     if input == "help"
       help 
     end
