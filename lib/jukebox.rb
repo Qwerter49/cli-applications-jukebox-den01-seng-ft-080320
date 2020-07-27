@@ -38,3 +38,24 @@ end
 def exit_jukebox
   puts "Goodbye"
 end
+
+def run(s0ngs)
+  puts "Please enter a command:"
+  input = gets.strip
+  until input == "exit" do 
+    if input == "help"
+      help 
+    end
+    if input == "list"
+      list(songs)
+    end
+    if input == "play"
+      play(songs)
+    end
+  end
+  exit_jukebox
+end
+
+
+
+
