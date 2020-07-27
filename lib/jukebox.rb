@@ -42,7 +42,8 @@ end
 def run(s0ngs)
   puts "Please enter a command:"
   input = gets.strip
-  while input != "exit" do 
+  i = 0 
+  while i < 1 do 
     if input == "help"
       help 
     end
@@ -52,8 +53,11 @@ def run(s0ngs)
     if input == "play"
       play(songs)
     end
+    if input == "exit"
+      exit_jukebox
+      i += 1 
+    end
   end
-  exit_jukebox
 end
 
 
