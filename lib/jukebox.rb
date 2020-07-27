@@ -40,12 +40,10 @@ def exit_jukebox
 end
 
 def run(songs)
-    i = 0 
-  while i < 1 do 
+i = 0 
+while i < 1 do 
   puts "Please enter a command:"
   input = gets.strip
-
-
     if input == "help"
       help 
     end
