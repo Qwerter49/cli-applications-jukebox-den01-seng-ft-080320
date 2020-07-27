@@ -25,7 +25,7 @@ def play(songs)
   prompt_user
   input = get_input
   songs.each_with_index do |song, index|
-    if input == song || input.to_i + 1  == index
+    if input == song || input.to_i  == index + 1
       puts "Playing #{song}"
       i += 1
     end
