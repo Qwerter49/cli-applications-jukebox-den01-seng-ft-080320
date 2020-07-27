@@ -21,5 +21,15 @@ def list(songs)
 end
 
 def play(songs)
-  
+  i = 0
+  prompt_user
+  input = get_input
+  songs.each_with_index do |song, index|
+    if input == song || input == index + 1
+      puts "Playing #{song}"
+      i += 1
+    end
+  end
+  if i == 0 
+    puts "Invalid input, please try again"
 end
